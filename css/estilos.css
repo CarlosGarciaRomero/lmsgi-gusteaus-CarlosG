@@ -3,6 +3,7 @@
     background-color: #fff8f0;
     font-family: 'Times New Roman', Times, serif ;
     font-size: 16px;
+    clear: both;
 }
 
 div.encabezado{
@@ -67,8 +68,10 @@ div.menu ul li a:hover{
 div.contenido{
     background-color: #fff8f0;
     color: #5a3e36;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
+    /*==PARTE4==*/
+    float: left;
 }
 
 div.sidebar{
@@ -76,6 +79,10 @@ div.sidebar{
     color: #5a3e36;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
+    float: right;
+    width: 30%; 
+    
+    
 }
 
 div.pie{
@@ -84,5 +91,8 @@ div.pie{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
+    /*el clearfix no hace nada*/
+    float: right;
+    width: 30%;
 
 }
