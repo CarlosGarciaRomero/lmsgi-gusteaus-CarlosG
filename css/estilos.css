@@ -1,9 +1,9 @@
 /*=====PARTE-1=====*/
 #contenedor{
-    background-color: #fff8f0;
+    background-color: #f8ede0;
     font-family: 'Times New Roman', Times, serif ;
+    font-style: italic;
     font-size: 16px;
-    clear: both;
 }
 
 div.encabezado{
@@ -66,7 +66,7 @@ div.menu ul li a:hover{
 /*====*/
 
 div.contenido{
-    background-color: #fff8f0;
+    background-color: #f8ede0;
     color: #5a3e36;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -81,18 +81,78 @@ div.sidebar{
     font-size: 18px;
     float: right;
     width: 30%; 
-    
-    
+    padding-left: 20px;
+}
+/*======Formulario=======*/
+div.formu{
+    color:#ecdcc6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color: #a77e58;
 }
 
+div.formu input[type='text'], input[type='email'], input[type='tel'], input[type='datetime-local']{
+    border: 1px solid #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+}
+
+div.formu input[type=number]{
+    border: 1px solid #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    width: 50px;
+}
+div.formu textarea{
+    order: 1px solid #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    width: 250px;
+    height: 100px;
+}
+
+div.formu button{
+    background-color: #5a3e36;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+div.formu button:hover{
+    background-color: #9e7753;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+div.formu label{
+    font-size: 16px;
+    display: block;
+}
+
+div.formu input:invalid{
+    border-right: 10px solid #8b0007;
+    transition: all 1s;
+}
+
+div.formu input:valid{
+    border-right: 10px solid #219e16;
+    transition: all 1s;
+}
+/*========================*/
 div.pie{
+    clear: both;
     background-color: #5a3e36;
     color: #ecdcc6;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
-    /*el clearfix no hace nada*/
-    float: right;
-    width: 30%;
-
 }

@@ -47,6 +47,35 @@
                 <li>Clases de Cocina con Chefs Expertos</li>
             </ul>
         </div>
+
+        <div class="formu">
+            <form action="#" method="post">
+                
+                <h2>Reservas</h2>
+                <!--NOMBRE-->
+                <label for="nombre">Nombre:<br></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required><br>
+                <!--EMAIL-->
+                <label for="email">Email:<br></label>
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <!--TELEFONO-->
+                <label for="telefono">Teléfono:<br></label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Telefono" minlength="9" maxlength="13" required><br>
+                <!--NUM_PERSONAS-->
+                <label for="cantidad_personas">Número de Personas:<br></label>
+                <input type="number" name="cantidad_personas" id="cantidad_personas" placeholder="Numero Personas" required><br>
+                <!--FECHA Y HORA-->
+                <label for="fech_hora">Fecha y Hora de la Reserva:<br></label>
+                <input type="datetime-local" name="usuario" id="fech_hora" placeholder="Fecha y Hora" required><br>
+                <!--CAMPO DE TEXTO-->
+                <label for="comentarios">Comentarios o Peticiones:<br></label>
+                <textarea name="comentarios" id="comentario">Comentenos y Peticiones aqui...</textarea><br>
+                <!--BOTON-->
+                <button type="submit">Reservar Mesa</button>
+
+            </form>
+        </div>
+
         <div class="pie">
             <div class="menu">
                 <ul>
