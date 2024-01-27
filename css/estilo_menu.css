@@ -1,0 +1,283 @@
+#contenedor{
+    background-color: #f8ede0;
+    font-family: 'Times New Roman', Times, serif ;
+    font-style: italic;
+    font-size: 16px;
+}
+
+header{
+    background-image: url(../imgs/guesteaus.png);
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-bottom: #5a3e36 solid 20px;
+    
+    /*==PARTE2==*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    background-color: #b69679;
+    width: 600px;
+    border-top: #8a6a62 solid 5px;
+    border-left: #3f2c27 solid 10px;
+    border-bottom: #3f2c27 solid 5px;
+    border-radius: 5% 50% 20% 5%;
+    padding-left: 50px;
+}
+/*=====TABLAS MENU=====*/
+main li{
+    background-color: #f3dfc8;
+    color: #5a3e36;
+    font-weight: bold;
+    display: flex;
+    width: 525px;
+    height: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    
+}
+
+main li:hover{
+    background-color: #f3dfc8;
+    color: #5a3e36;
+    font-weight: bold;
+    display: flex;
+    width: 525px;
+    height: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    border-bottom: #5a3e36 solid 1px;
+    border-left: #5a3e36 solid 5px;
+    
+}
+
+/*=====MENU PRINCIPAL Y DE PIE=====*/
+div.menu ul li a{
+    background-color: #a77e58;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 18px;
+    transition: all 0.5s ;
+}
+div.menu li{
+    display: inline-block;
+    padding: 10px;
+    margin-inline: 10px;
+    
+}
+div.menu ul{
+    text-align: center;
+    background-color: #a77e58;
+    margin-top: 0px;
+}
+
+div.menu ul li a:hover{
+    cursor: pointer;
+    background-color: #cf9c6c;
+    color: #f8cfa7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border: #5a3e36 solid 2px;
+    border-radius: 0% 0% 25% 25%;
+    background-color: #5a3e36;
+    position:relative;
+    z-index: 2;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    
+}
+div.pie div.menu ul li a:hover{
+    cursor: pointer;
+    background-color: #cf9c6c;
+    color: #f8cfa7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border: #5a3e36 solid 2px;
+    border-radius: 0%;
+    background-color: #5a3e36;
+    padding: 10px;
+}
+
+div.pie{
+    margin-top: 5%;
+    clear: both;
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+/*=====MENU LATERAL=====*/
+body div.sidebar{
+    background-color: #ecdcc6;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    float: right;
+    width: 30%; 
+    padding-left: 20px;
+    margin-right: 20px;
+}
+body div.sidebar li{
+    border: transparent solid;
+    border-bottom: #5a3e36 solid 1px;
+    border-left: #5a3e36 solid 5px;
+    width: 200px;
+}
+body div.sidebar h2{
+    width: 450px;
+}
+
+/*=====DATA=====*/
+
+/*=====LISTA ALERGENOS=====*/
+div.sidebar li[data-alergenos=""]{
+    border-right: #c4c4c4 solid 15px;
+}
+div.sidebar li[data-alergenos="lacteos"]{
+    border-right: #b26cc7 solid 15px;
+}
+div.sidebar li[data-alergenos="mariscos"]{
+    border-right: #d49087 solid 15px;
+}
+
+div.sidebar li[data-alergenos="nueces"]{
+    border-right: #5f453e solid 15px;
+}
+
+div.sidebar li[data-alergenos="gluten"]{
+    border-right: #ff8161 solid 15px;
+}
+
+div.sidebar li[data-alergenos="pescado"]{
+    border-right: #4882da solid 15px;
+}
+
+div.sidebar li[data-alergenos="gluten nueces"]{
+    border-right: #67c74a solid 15px;
+}
+
+div.sidebar li[data-alergenos="lacteos nueces"]{
+    border-right: #3fb194 solid 15px;
+}
+
+div.sidebar li[data-alergenos="nueces mariscos"]{
+    border-right: #a75946 solid 15px;
+}
+
+div.sidebar li[data-alergenos="lacteos gluten"]{
+    border-right: #7db43e solid 15px;
+}
+
+div.sidebar li[data-alergenos="lacteos pescado"]{
+    border-right: #5a44be solid 15px;
+}
+
+div.sidebar li[data-alergenos="lacteos huevos"]{
+    border-right: #00ad57 solid 15px;
+}
+
+div.sidebar li[data-alergenos="lacteos huevos nueces"]{
+    border-right: #af546b solid 15px;
+}
+
+div.sidebar li[data-alergenos="lacteos nueces gluten"]{
+    border-right: #7190b9 solid 15px;
+}
+
+
+/*=====ALERGENOS MENUS=====*/
+li[data-alergenos=""]:hover{
+    border-right: #c4c4c4 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="nueces mariscos"]:hover{
+    border-right: #a75946 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="nueces"]:hover{
+    border-right: #5f453e solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="mariscos"]:hover{
+    border-right: #d49087 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="lacteos pescado"]:hover{
+    border-right: #5a44be solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="gluten nueces"]:hover{
+    border-right: #67c74a solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="lacteos nueces"]:hover{
+    border-right: #3fb194 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="lacteos huevos nueces"]:hover{
+    border-right: #af546b solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="pescado"]:hover{
+    border-right: #4882da solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="lacteos gluten"]:hover{
+    border-right: #7db43e solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="gluten"]:hover{
+    border-right: #ff8161 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="lacteos huevos"]:hover{
+    border-right: #00ad57 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="lacteos nueces gluten"]:hover{
+    border-right: #7190b9 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
+
+li[data-alergenos="lacteos"]:hover{
+    border-right: #b26cc7 solid 60px;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.6s;
+}
